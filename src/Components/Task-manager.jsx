@@ -110,10 +110,11 @@ const TaskManager = () => {
             <option value="Tomorrow">Tomorrow</option>
           </select>
           <select
-            value={taskPriority}
+            value="priority"
             onChange={(e) => setTaskPriority(e.target.value)}
-            className="flex-1 p-2 border rounded-xl"
+            className="flex p-2 border rounded-xl"
           >
+            <option value="0">Priority</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
